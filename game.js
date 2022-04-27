@@ -22,7 +22,9 @@ class Sprite{
 
     update() {
         this.draw()
+
         this.position.y += this.velocity.y
+        this.position.x += this.velocity.x
 
         if(this.position.y + this.height + this.velocity.y >= canvas.height){
             this.velocity.y = 0
@@ -33,8 +35,8 @@ class Sprite{
 
 const player = new Sprite({
     position: {
-    x: 0,
-    y: 0
+      x: 0,
+        y: 0
     },
     velocity: {
         x: 0,
@@ -59,16 +61,53 @@ enemy.draw()
 
 console.log(player);
 
+//이게 맞나?
+const keys = {
+    right: {
+        pressed: false
+    },
+    left: {
+        pressed: false
+    }
+}
+
 function animate(){
     window.requestAnimationFrame(animate)
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
     player.update()
     enemy.update()
+
+    player.velocity.x = 0
+    
+    if(keys.right.pressed){
+        player.velocity.x = 1
+    } else if (keys.left.pressed) {
+        player.velocity.x = -1
+    }
 }
 
 animate()
 
 window.addEventListener('keydown', (event) => {
-    console.log(event.key)
+    switch(event.key){
+        case 'ArrowRight':
+            keys.right.pressed = true
+            break
+        case 'ArrowLeft' :
+            keys.left.pressed = true
+            break
+    }
+    
+})
+
+window.addEventListener('keyup', (event) => {
+    switch(event.key){
+        case 'ArrowRight':
+            keys.right.pressed = false
+            break
+        case 'ArrowLeft':
+            keys.left.pressed = false
+            break
+    }
 })
