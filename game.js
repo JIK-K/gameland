@@ -6,13 +6,14 @@ canvas.height = 576
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 
-const gravity = 0.2
+const gravity = 0.7
 
 class Sprite{
     constructor({position, velocity}){
         this.position = position
         this.velocity = velocity
         this.height = 150
+        this.lastkey
     }
 
     draw(){
@@ -73,7 +74,7 @@ const keys = {
         pressed: false
     }
 }
-let lastkey
+
 
 function animate(){
     window.requestAnimationFrame(animate)
@@ -84,13 +85,13 @@ function animate(){
 
     player.velocity.x = 0
     
-    if(keys.right.pressed && lastkey === 'ArrowRight'){
-        player.velocity.x = 1
-    } else if (keys.left.pressed && lastkey === 'ArrowLeft'){
-        player.velocity.x = -1
-    } else if (keys.up.pressed && lastkey === 'ArrowUp'){
-        player.velocity.y = -5
-    }
+    if(keys.right.pressed && player.lastkey === 'ArrowRight'){
+        player.velocity.x = 5
+    } else if (keys.left.pressed && player.lastkey === 'ArrowLeft'){
+        player.velocity.x = -5
+    } /*else if (keys.up.pressed && player.lastkey === 'ArrowUp'){
+        player.velocity.y = -10
+    } */
 }
 
 animate()
@@ -99,15 +100,16 @@ window.addEventListener('keydown', (event) => {
     switch(event.key){
         case 'ArrowRight':
             keys.right.pressed = true
-            lastkey = 'ArrowRight'
+            player.lastkey = 'ArrowRight'
             break
         case 'ArrowLeft':
             keys.left.pressed = true
-            lastkey = 'ArrowLeft'
+            player.lastkey = 'ArrowLeft'
             break
         case 'ArrowUp':
-            keys.up.pressed = true
-            lastkey = 'ArrowUp'
+            player.velocity.y = -10
+            //keys.up.pressed = true
+            //player.lastkey = 'ArrowUp'
             break
     }
     
@@ -122,6 +124,7 @@ window.addEventListener('keyup', (event) => {
             keys.left.pressed = false
             break
         case 'ArrowUp':
-            keys.up.pressed = false
+            //keys.up.pressed = false
+            break
     }
 })
