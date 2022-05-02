@@ -36,7 +36,7 @@ class Sprite{
 
 const player = new Sprite({
     position: {
-      x: 0,
+        x: 0,
         y: 0
     },
     velocity: {
@@ -79,6 +79,8 @@ let isGround = false;
 let doubleJump = false;
 let jumpCount = 2;
 
+let disxPtE, disyPtE;
+
 function animate(){
     window.requestAnimationFrame(animate)
     c.fillStyle = 'black'
@@ -87,7 +89,25 @@ function animate(){
     enemy.update()
 
     player.velocity.x = 0
+    enemy.velocity.x = 0
     
+    //이런 느낌이긴 한데~ 음음음음
+    disxPtE = player.position.x - enemy.position.x
+    disyPtE = player.position.y - enemy.position.y
+
+    if(disxPtE > -300 && disxPtE < 0){
+        enemy.velocity.x = -1
+        if(disyPtE < -100){
+           enemy.velocity.y = -10
+    }
+    } else if (disxPtE < 300 && disxPtE > 0){
+        enemy.velocity.x = 1
+        if(disyPtE < -100){
+           enemy.velocity.y = -5
+    }
+    }
+
+
     if(keys.right.pressed && player.lastkey === 'ArrowRight'){
         player.velocity.x = 10
     } else if (keys.left.pressed && player.lastkey === 'ArrowLeft'){
@@ -115,6 +135,7 @@ function animate(){
     }
     */
 
+    //더블점프 할거야
     if(player.velocity.y == 0){
         isGround = true;
     } else {
@@ -147,7 +168,6 @@ window.addEventListener('keydown', (event) => {
         if(jumpCount > 0){
                 player.velocity.y = -15
                 jumpCount--;
-                console.log(jumpCount);
         }
             keys.up.pressed = true
             //player.lastkey = 'ArrowUp'
