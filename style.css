@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background-color: #eeffa0;
 }
 
 nav {
@@ -15,69 +16,55 @@ button {
     padding: 0;
 }
 
-li{
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
     list-style: none;
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 .header_outer {
     width: 100%;
     min-width: 783px;
+    height: 60px;
 
-    background-color: white;
+    background-color: black;
 
-
+    position: relative;
 }
 
 .header_inner {
-    padding-left: 0px;
-    padding-right: 2px;
-    display: flex;
+    position: absolute;
 
-    align-items:flex-end;
-    max-width: 1100px;
-    margin: 0 auto;
-    height: 52px;
-
-    border-bottom: 1px solid black;
-}
-
-.header_btn{
-    width: 200px;
-    height: 45px;
+    bottom: 0;
 
     display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    background-color: #eeffa0;
-    color: black;
-
-    border-radius: 10px 10px 0 0;
-
-    border: 1px solid black;
-    border-bottom: 0;
 }
 
-.on_clk{
-    border-bottom: 1px solid #eeffa0;
-    transform: translateY(2%);
+.kk {
+    position: absolute;
+
+    right: 300px;
+
+    bottom: 20px;
 }
 
-.non_clk{
-    background-color: gray;
+.hotbaby {
+    position: absolute;
 
-    height: 30px;
+    right: 0;
 
-    border-left: 0;
+    bottom: 20px;
 }
 
-.root{
+.root {
     padding-top: 200px;
 
     width: 1100px;
@@ -87,11 +74,28 @@ a{
     margin: 0 auto;
 
     height: 100%;
-
-    border: 1px solid black;
 }
 
-.img{
+.triangle {
+    width: 200px;
+    height: 45px;
+
+    border-bottom: 50px solid #eeffa0;
+    border-left: 100px solid #eeffa0;
+    border-right: 30px solid transparent;
+}
+
+.triangleb {
+    width: 200px;
+    height: 45px;
+
+    border-bottom: 50px solid #666666;
+    border-left: 100px solid #666666;
+    border-right: 30px solid transparent;
+
+}
+
+.img {
     width: 100%;
     height: 100%;
 }
