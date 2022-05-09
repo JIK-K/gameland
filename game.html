@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>ㅈㅇㅈ의 안전자산 놀이터</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="game.js"></script>
+    <script defer="defer" src="game.js"></script>
 </head>
 
 <body>
@@ -32,9 +32,31 @@
     </nav>
     <div class="root">
         <main>
-            <canvas>
-
-            </canvas>
+            <div style="position: relative; display: inline-block;">
+                <div style="
+                    position: absolute; 
+                    display: flex; 
+                    width: 100%; 
+                    align-items: center; 
+                    padding: 20px;">
+                    <!--playerhealth-->
+                    <div style="background-color: yellow; height: 30px; width: 100%;;"></div>
+                    <!--timer-->
+                    <div style="
+                        background-color: red; 
+                        height: 100px; 
+                        width: 100px; 
+                        flex-shrink: 0;">
+                    </div>
+                    <!--enemyhealth-->
+                    <div style="position: relative; height: 30px; width: 100%;">
+                        <div id="enemyHealth" style="background-color: yellow; height: 30px; width: 100%;"></div>
+                        <div style="position: absolute; background: blue"></div>
+                    </div>
+                    <div></div>
+                </div>
+                <canvas></canvas>
+            </div>
         </main>
     </div>
 </body>
