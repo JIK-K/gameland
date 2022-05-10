@@ -30,6 +30,16 @@ a {
     text-decoration: none;
 }
 
+button{
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    cursor:pointer;
+}
+
 .header_outer {
     width: 100%;
     min-width: 783px;
@@ -38,9 +48,25 @@ a {
     background-color: black;
 
     position: relative;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
 }
 
-.header_inner {
+.header_nav{
+    display: flex;
+    
+    width: 800px;
+    height: 60px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.navlist {
     position: absolute;
 
     bottom: 0;
@@ -48,20 +74,39 @@ a {
     display: flex;
 }
 
-.kk {
-    position: absolute;
+.kk { 
+    display: flex;
+}
 
-    right: 300px;
+.search_box{
+    border: 0;
 
-    bottom: 20px;
+    margin-right: 10px;
+    
+    width: 240px;
+    height: 40px;
+}
+
+.search_btn{
+    border: 0;
+
+    height: 40px;
+    width: 40px;
+
+    background-color: rgb(240, 211, 81);
+    color: white;
 }
 
 .hotbaby {
-    position: absolute;
+    margin-right: 10px;
+}
 
-    right: 0;
+.menu_btn{
+    color: white;
+    background-color: black;
 
-    bottom: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .root {
