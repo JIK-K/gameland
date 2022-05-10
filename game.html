@@ -9,30 +9,35 @@
 </head>
 
 <body>
-<nav>
-    <div class="header_outer">
-        <ul class="header_inner">
-            <li>
-                <div class="triangle"></div>
-            </li>
-            <li>
-                <a href="game.html">
-                    <div class="triangleb"></div>
-                </a>
-            </li>
-            <li>
-                <div class="triangleb"></div>
-            </li>
-        </ul>
-        <div class="kk">
-            <input type="text">
-            <button>검색</button>
+    <nav>
+        <div class="header_outer">
+            <div class="header_nav">
+                <ul class="navlist">
+                    <li>
+                        <div class="triangleb"></div>
+                    </li>
+                    <li>
+                        <a href="game.html">
+                            <div class="triangle"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="triangleb"></div>
+                    </li>
+                    <li>
+                        <div class="triangleb"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="kk">
+                <input class="search_box" type="text">
+                <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="hotbaby">
+                <button class="menu_btn"><i class="fa-solid fa-bars fa-xl"></i></button>
+            </div>
         </div>
-        <div class="hotbaby">
-            <button>로그인</button>
-        </div>
-    </div>
-</nav>
+    </nav>
     <div class="root">
         <main>
             <div style="position: relative; display: inline-block;">
@@ -43,9 +48,12 @@
                     align-items: center; 
                     padding: 20px;">
                     <!--playerhealth-->
-                    <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
-                    <div style="background-color: yellow; height: 30px; width: 100%;"></div>
-                    <div id="playerHealth" style="position: absolute; background: blue; top: 0; bottom: 0; right: 0; width: 100%;"></div>
+                    <div
+                        style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                        <div style="background-color: yellow; height: 30px; width: 100%;"></div>
+                        <div id="playerHealth"
+                            style="position: absolute; background: blue; top: 0; bottom: 0; right: 0; width: 100%;">
+                        </div>
                     </div>
                     <!--timer-->
                     <div style="
@@ -57,7 +65,8 @@
                     <!--enemyhealth-->
                     <div style="position: relative; height: 30px; width: 100%;">
                         <div style="background-color: yellow; height: 30px; width: 100%;"></div>
-                        <div id="enemyHealth" style="position: absolute; background: blue; top: 0; bottom: 0; right: 0; left: 0;"></div>
+                        <div id="enemyHealth"
+                            style="position: absolute; background: blue; top: 0; bottom: 0; right: 0; left: 0;"></div>
                     </div>
                     <div></div>
                 </div>
