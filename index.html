@@ -6,9 +6,28 @@
     <title>ㅈㅇㅈ의 안전자산 놀이터</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e21810c481.js" crossorigin="anonymous"></script>
+    <script src="function.js"></script>
 </head>
 
 <body>
+
+<div class="modal">
+    <div class="modal_component">
+        <div class="modal_component_body">
+            <div class="modal_Wrap">
+                <form action="register.php" method="post">
+                    <div>ID: <input type="text" id="userId " name="userId" required></div>
+                    <div>PW: <input type="text" id="userPw" name="userPw"></div>
+                    <div>Name: <input type="text" id="userName" name="userName"></div>
+                    <div>Birth: <input type="text" id="userBirth" name="userBirth"></div>
+                    <div>Number: <input type="text" id="userNum" name="userNum"></div>
+                    <div><input type="submit" value="보내기" onclick="modalout()"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
     <nav>
         <div class="header_outer">
             <div class="header_nav">
@@ -40,7 +59,7 @@
                 <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="hotbaby">
-                <button class="menu_btn"><i class="fa-solid fa-bars fa-xl"></i></button>
+                <button class="menu_btn" onclick="modalin()"><i class="fa-solid fa-bars fa-xl"></i></button>
             </div>
         </div>
     </nav>
