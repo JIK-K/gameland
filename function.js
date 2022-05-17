@@ -1,11 +1,10 @@
-function modalin(){
-    const sel = document.getElementsByClassName('modal')[0];
+const modal = document.getElementById('modal');
+const btnModal = document.getElementById('btn');
 
-    sel.style.display = "block";
-}
+btnModal.addEventListener('click', () => {
+  modal.classList.add('show-modal')
+});
 
-function modalout(){
-    const sel = document.getElementsByClassName('modal')[0];
-
-    sel.style.display = "none";
-}
+window.addEventListener('click', (e) => {
+  e.target === modal ? modal.classList.remove('show-modal') : false
+})
