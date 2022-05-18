@@ -8,3 +8,11 @@ btnModal.addEventListener('click', () => {
 window.addEventListener('click', (e) => {
   e.target === modal ? modal.classList.remove('show-modal') : false
 })
+
+function todo(){
+  const log = document.querySelector('.modal_login');
+  const reg = document.querySelector('.modal_Wrap');
+
+  log.style.display = 'none';
+  reg.style.display = 'block';
+}
