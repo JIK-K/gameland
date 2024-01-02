@@ -5,7 +5,7 @@ import React from "react";
 
 function Router() {
   return (
-    <BrowserRouter basename="/GameLand">
+    <BrowserRouter basename="https://jik-k.github.io/GameLand">
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
