@@ -1,6 +1,6 @@
 {
   "homepage": "https://jik-k.github.io/gameland",
-  "name": "react-deploy-test",
+  "name": "gameland",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
