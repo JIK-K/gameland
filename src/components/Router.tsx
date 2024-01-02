@@ -5,10 +5,10 @@ import React from "react";
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/GameLand">
       <Routes>
-        <Route path="GameLand/home" element={<Home />} />
-        <Route path="GameLand/about" element={<AboutPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );
