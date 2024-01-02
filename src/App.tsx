@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import Home from "./pages/Home/HomePage";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       ddsdfgsdfg
       <div>dddd</div>
       <NavLink to="/home">Home</NavLink>
+      <NavLink to="/about">About</NavLink>
     </div>
   );
 }
