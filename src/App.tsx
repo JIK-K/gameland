@@ -5,7 +5,7 @@ import Home from "./pages/Home/HomePage";
 
 function App() {
   return (
-    <BrowserRouter basename="https://jik-k.github.io/GameLand">
+    <BrowserRouter basename="https://jik-k.github.io/gameland">
       <div>
         ddsdfgsdfg
         <div>dddd</div>
