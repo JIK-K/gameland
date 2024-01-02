@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GameLand/static/css/main.f855e6bc.css",
-    "main.js": "/GameLand/static/js/main.5417efec.js",
-    "static/js/787.d7fb52e9.chunk.js": "/GameLand/static/js/787.d7fb52e9.chunk.js",
-    "index.html": "/GameLand/index.html",
-    "main.f855e6bc.css.map": "/GameLand/static/css/main.f855e6bc.css.map",
-    "main.5417efec.js.map": "/GameLand/static/js/main.5417efec.js.map",
-    "787.d7fb52e9.chunk.js.map": "/GameLand/static/js/787.d7fb52e9.chunk.js.map"
+    "main.css": "/gameland/static/css/main.f855e6bc.css",
+    "main.js": "/gameland/static/js/main.9b6bae22.js",
+    "static/js/787.d7fb52e9.chunk.js": "/gameland/static/js/787.d7fb52e9.chunk.js",
+    "index.html": "/gameland/index.html",
+    "main.f855e6bc.css.map": "/gameland/static/css/main.f855e6bc.css.map",
+    "main.9b6bae22.js.map": "/gameland/static/js/main.9b6bae22.js.map",
+    "787.d7fb52e9.chunk.js.map": "/gameland/static/js/787.d7fb52e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.5417efec.js"
+    "static/js/main.9b6bae22.js"
   ]
 }
