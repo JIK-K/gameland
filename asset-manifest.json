@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/GameLand/static/css/main.f855e6bc.css",
-    "main.js": "/GameLand/static/js/main.93387add.js",
+    "main.js": "/GameLand/static/js/main.09b06dc6.js",
     "static/js/787.d7fb52e9.chunk.js": "/GameLand/static/js/787.d7fb52e9.chunk.js",
     "index.html": "/GameLand/index.html",
     "main.f855e6bc.css.map": "/GameLand/static/css/main.f855e6bc.css.map",
-    "main.93387add.js.map": "/GameLand/static/js/main.93387add.js.map",
+    "main.09b06dc6.js.map": "/GameLand/static/js/main.09b06dc6.js.map",
     "787.d7fb52e9.chunk.js.map": "/GameLand/static/js/787.d7fb52e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.93387add.js"
+    "static/js/main.09b06dc6.js"
   ]
 }
