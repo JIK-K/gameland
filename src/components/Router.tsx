@@ -7,8 +7,8 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="GameLand/home" element={<Home />} />
+        <Route path="GameLand/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );
