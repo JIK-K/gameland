@@ -1,7 +1,13 @@
 import React from "react";
 import "./App.css";
-import { NavLink, Route } from "react-router-dom";
+import {
+  NavLink,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import Home from "./pages/Home/HomePage";
+import About from "./pages/About/AboutPage";
 
 function App() {
   return (
