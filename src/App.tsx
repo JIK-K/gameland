@@ -6,15 +6,19 @@ import {
   BrowserRouter as Router,
   Routes,
 } from "react-router-dom";
-import Home from "./pages/Home/HomePage";
-import About from "./pages/About/AboutPage";
-
+import HomePage from "./pages/Home/HomePage";
+import AboutPage from "./pages/About/AboutPage";
+import { styled } from "styled-components";
 function App() {
   return (
-    <div>
-      <NavLink to="/home">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-    </div>
+    <Routes>
+      <Route path="/" Component={HomePage} />
+      <Route path="/about" Component={AboutPage} />
+    </Routes>
+    // <div>
+    //   <NavLink to="/home">Home</NavLink>
+    //   <NavLink to="/about">About</NavLink>
+    // </div>
   );
 }
 

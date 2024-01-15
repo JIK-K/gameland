@@ -15,10 +15,6 @@ root.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
       <App />
-      <Routes>
-        <Route path="/home" Component={HomePage} />
-        <Route path="/about" Component={AboutPage} />
-      </Routes>
     </Router>
   </React.StrictMode>
 );
