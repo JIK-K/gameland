@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import banner from "../../../assets/image/banner.png";
 import { NavLink } from "react-router-dom";
 
 const Background = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 50px;
-  background-color: yellow;
+  background-color: black;
+  border-bottom: solid 3px yellow;
 `;
 
 const MeauBar = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 50px;
   display: flex;
   align-items: center;
@@ -28,8 +29,6 @@ const TopBar = () => {
         <Banner src={banner} alt="banner" />
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/Games/SpinningSword">SpinningSword</NavLink>
-        <NavLink to="/Games/BattleCity">BattleCity</NavLink>
       </MeauBar>
     </Background>
   );
