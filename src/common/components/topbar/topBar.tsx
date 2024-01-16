@@ -29,6 +29,7 @@ const TopBar = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/Games/SpinningSword">SpinningSword</NavLink>
+        <NavLink to="/Games/BattleCity">BattleCity</NavLink>
       </MeauBar>
     </Background>
   );
