@@ -22,13 +22,28 @@ const Banner = styled.img`
   height: 50px;
 `;
 
+const LinkBox = styled.div`
+  width: fit-content;
+  height: fit-content;
+  padding: 8px;
+  background-color: black;
+  background-image: linear-gradient(to bottom, black, yellow);
+`;
+
 const TopBar = () => {
   return (
     <Background>
       <MeauBar>
         <Banner src={banner} alt="banner" />
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <LinkBox>
+          <NavLink to="/" style={{ color: "#E6E6E6", fontWeight: "bold" }}>
+            Home
+          </NavLink>
+        </LinkBox>
+
+        <NavLink to="/about" style={{ color: "#E6E6E6", fontWeight: "bold" }}>
+          About
+        </NavLink>
       </MeauBar>
     </Background>
   );

@@ -5,7 +5,7 @@ import TopBar from "../../../common/components/topBar/topBar";
 const Background = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #228be6;
+  background-color: gray;
 `;
 
 const SpinningSword = () => {

@@ -11,7 +11,7 @@ const Background = styled.div`
 `;
 
 const Body = styled.div`
-  background-color: yellow;
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
