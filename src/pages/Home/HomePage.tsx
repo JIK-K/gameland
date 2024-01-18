@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import TopBar from "../../common/components/topBar/topBar";
+import TopBar from "../../common/components/topbar/topBar";
 import GameBox from "../../common/components/gameBox/gameBox";
 import gameNames from "../../data/gameData";
 
@@ -26,7 +26,7 @@ const HomePage = () => {
     const interval = setInterval(() => {
       const randomColor = getRandomColor();
       setBorderColor(randomColor);
-    }, 500);
+    }, 300);
 
     return () => clearInterval(interval);
   }, []);

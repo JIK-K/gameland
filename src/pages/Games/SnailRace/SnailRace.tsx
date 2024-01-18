@@ -8,13 +8,13 @@ const Background = styled.div`
   background-color: gray;
 `;
 
-const BattleCity = () => {
+const SnailRace = () => {
   return (
     <Background>
       <TopBar />
       <iframe
-        src="https://newagebegins.github.io/BattleCity/BattleCity.html"
-        title="BattleCity"
+        src="https://html-classic.itch.zone/html/4969206/index.html"
+        title="SnailRace"
         width="100%"
         height="100%"
         style={{ border: "none" }}
@@ -22,4 +22,4 @@ const BattleCity = () => {
     </Background>
   );
 };
-export default BattleCity;
+export default SnailRace;

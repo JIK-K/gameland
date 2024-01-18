@@ -5,6 +5,7 @@ import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./pages/About/AboutPage";
 import SpinningSword from "./pages/Games/SpinningSword/SpinningSword";
 import BattleCity from "./pages/Games/BattleCity/BattleCity";
+import SnailRace from "./pages/Games/SnailRace/SnailRace";
 function App() {
   return (
     <Routes>
@@ -13,6 +14,7 @@ function App() {
       {/* Games */}
       <Route path="/Games/SpinningSword" Component={SpinningSword} />
       <Route path="/Games/BattleCity" Component={BattleCity} />
+      <Route path="/Games/SnailRace" Component={SnailRace} />
     </Routes>
   );
 }
