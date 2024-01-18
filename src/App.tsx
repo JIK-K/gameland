@@ -6,6 +6,7 @@ import AboutPage from "./pages/About/AboutPage";
 import SpinningSword from "./pages/Games/SpinningSword/SpinningSword";
 import BattleCity from "./pages/Games/BattleCity/BattleCity";
 import SnailRace from "./pages/Games/SnailRace/SnailRace";
+import NeonDesert from "./pages/Games/NeonDesert/NeonDesert";
 function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function App() {
       <Route path="/Games/SpinningSword" Component={SpinningSword} />
       <Route path="/Games/BattleCity" Component={BattleCity} />
       <Route path="/Games/SnailRace" Component={SnailRace} />
+      <Route path="/Games/NeonDesert" Component={NeonDesert} />
     </Routes>
   );
 }

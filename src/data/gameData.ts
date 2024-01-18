@@ -1,2 +1,2 @@
-const gameNames = ["SpinningSword", "BattleCity", "SnailRace"];
+const gameNames = ["SpinningSword", "BattleCity", "SnailRace", "NeonDesert"];
 export default gameNames;
