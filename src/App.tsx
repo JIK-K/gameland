@@ -9,6 +9,8 @@ import SnailRace from "./pages/Games/SnailRace/SnailRace";
 import NeonDesert from "./pages/Games/NeonDesert/NeonDesert";
 import Blank from "./pages/Games/Blank/Blank";
 import MetalSlug2 from "./pages/Games/MetalSlug2/MetalSlug2";
+import Striker1945 from "./pages/Games/Striker1945/Striker1945";
+import RedHand from "./pages/Games/RedHand/RedHand";
 function App() {
   return (
     <Routes>
@@ -21,6 +23,8 @@ function App() {
       <Route path="/Games/NeonDesert" Component={NeonDesert} />
       <Route path="/Games/Blank" Component={Blank} />
       <Route path="/Games/MetalSlug2" Component={MetalSlug2} />
+      <Route path="/Games/Striker1945" Component={Striker1945} />
+      <Route path="/Games/RedHand" Component={RedHand} />
     </Routes>
   );
 }
