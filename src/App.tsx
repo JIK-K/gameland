@@ -7,6 +7,8 @@ import SpinningSword from "./pages/Games/SpinningSword/SpinningSword";
 import BattleCity from "./pages/Games/BattleCity/BattleCity";
 import SnailRace from "./pages/Games/SnailRace/SnailRace";
 import NeonDesert from "./pages/Games/NeonDesert/NeonDesert";
+import Blank from "./pages/Games/Blank/Blank";
+import MetalSlug2 from "./pages/Games/MetalSlug2/MetalSlug2";
 function App() {
   return (
     <Routes>
@@ -17,6 +19,8 @@ function App() {
       <Route path="/Games/BattleCity" Component={BattleCity} />
       <Route path="/Games/SnailRace" Component={SnailRace} />
       <Route path="/Games/NeonDesert" Component={NeonDesert} />
+      <Route path="/Games/Blank" Component={Blank} />
+      <Route path="/Games/MetalSlug2" Component={MetalSlug2} />
     </Routes>
   );
 }
