@@ -31,9 +31,15 @@ const GameDescription = styled.p`
   font-weight: bold;
   color: black;
 `;
+const Banner = styled.img`
+  width: 200px;
+  height: 150px;
+  object-fit: fit;
+`;
 
 interface Props {
   gameName: string;
+  img: string;
 }
 
 const GameBox = (props: Props) => {
@@ -42,6 +48,10 @@ const GameBox = (props: Props) => {
   return (
     <Link to={`/Games/${gameName}`}>
       <Background>
+        <Banner
+          src={`${process.env.PUBLIC_URL}/img/${gameName}.png`}
+          alt="banner"
+        />
         <Body>
           <GameDescription>{gameName}</GameDescription>
         </Body>

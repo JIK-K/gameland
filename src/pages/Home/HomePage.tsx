@@ -44,7 +44,7 @@ const HomePage = () => {
       <TopBar />
       <Body>
         {gameNames.map((gameName, index) => (
-          <GameBox key={index} gameName={gameName} />
+          <GameBox gameName={gameName} img={gameName} key={index} />
         ))}
       </Body>
     </Background>
