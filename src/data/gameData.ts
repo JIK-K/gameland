@@ -7,5 +7,15 @@ const gameNames = [
   "MetalSlug2",
   "Striker1945",
   "RedHand",
+  "BloodyRoar",
+  "BloodyRoar2",
+  "Dinorex",
+  "DungeonsDragons",
+  "Gunbird",
+  "SnowBros",
+  "SnowBros2",
+  "Tekken3",
+  "Tengai",
+  "천공대전",
 ];
 export default gameNames;

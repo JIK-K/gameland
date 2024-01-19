@@ -11,6 +11,16 @@ import Blank from "./pages/Games/Blank/Blank";
 import MetalSlug2 from "./pages/Games/MetalSlug2/MetalSlug2";
 import Striker1945 from "./pages/Games/Striker1945/Striker1945";
 import RedHand from "./pages/Games/RedHand/RedHand";
+import BloodyRoar from "./pages/Games/BloodyRoar/BloodyRoar";
+import Dinorex from "./pages/Games/Dinorex/Dinorex";
+import DungeonsDragons from "./pages/Games/DungeonsDragons/DungeonsDragons";
+import Gunbird from "./pages/Games/Gunbird/Gunbird";
+import SnowBros from "./pages/Games/SnowBros/SnowBros";
+import SnowBros2 from "./pages/Games/SnowBros2/SnowBros2";
+import Tekken3 from "./pages/Games/Tekken3/Tekken3";
+import Tengai from "./pages/Games/Tengai/Tengai";
+import 천공대전 from "./pages/Games/천공대전/천공대전";
+import BloodyRoar2 from "./pages/Games/BloodyRoar2/BloodyRoar2";
 function App() {
   return (
     <Routes>
@@ -25,6 +35,16 @@ function App() {
       <Route path="/Games/MetalSlug2" Component={MetalSlug2} />
       <Route path="/Games/Striker1945" Component={Striker1945} />
       <Route path="/Games/RedHand" Component={RedHand} />
+      <Route path="/Games/BloodyRoar" Component={BloodyRoar} />
+      <Route path="/Games/Dinorex" Component={Dinorex} />
+      <Route path="/Games/DungeonsDragons" Component={DungeonsDragons} />
+      <Route path="/Games/Gunbird" Component={Gunbird} />
+      <Route path="/Games/SnowBros" Component={SnowBros} />
+      <Route path="/Games/SnowBros2" Component={SnowBros2} />
+      <Route path="/Games/Tekken3" Component={Tekken3} />
+      <Route path="/Games/Tengai" Component={Tengai} />
+      <Route path="/Games/천공대전" Component={천공대전} />
+      <Route path="/Games/BloodyRoar2" Component={BloodyRoar2} />
     </Routes>
   );
 }
