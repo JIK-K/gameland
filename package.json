@@ -2,6 +2,7 @@
   "homepage": "https://jik-k.github.io/gameland/",
   "name": "gameland",
   "version": "0.1.0",
+  "description": "not real",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
