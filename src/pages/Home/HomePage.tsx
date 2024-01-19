@@ -5,8 +5,8 @@ import GameBox from "../../common/components/gameBox/gameBox";
 import gameNames from "../../data/gameData";
 
 const Background = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: white;
 `;
 
@@ -15,6 +15,7 @@ const Body = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   gap: 1%;
   padding: 15px;
 `;

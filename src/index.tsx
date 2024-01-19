@@ -3,10 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomePage from "./pages/Home/HomePage";
-import AboutPage from "./pages/About/AboutPage";
-import { Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

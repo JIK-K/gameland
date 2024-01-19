@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import banner from "../../../assets/image/banner.png";
 import { NavLink } from "react-router-dom";

@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-color: gray;
   border: solid black 3px;
   margin: 1px;
@@ -32,8 +32,8 @@ const GameDescription = styled.p`
   color: black;
 `;
 const Banner = styled.img`
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 250px;
   object-fit: fit;
 `;
 
