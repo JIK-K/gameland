@@ -21,6 +21,7 @@ import Tekken3 from "./pages/Games/Tekken3/Tekken3";
 import Tengai from "./pages/Games/Tengai/Tengai";
 import 천공대전 from "./pages/Games/천공대전/천공대전";
 import BloodyRoar2 from "./pages/Games/BloodyRoar2/BloodyRoar2";
+import MapleDS from "./pages/Games/MapleDS/MapleDS";
 function App() {
   return (
     <Routes>
@@ -45,6 +46,7 @@ function App() {
       <Route path="/Games/Tengai" Component={Tengai} />
       <Route path="/Games/천공대전" Component={천공대전} />
       <Route path="/Games/BloodyRoar2" Component={BloodyRoar2} />
+      <Route path="/Games/MapleDS" Component={MapleDS} />
     </Routes>
   );
 }

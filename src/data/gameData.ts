@@ -17,5 +17,6 @@ const gameNames = [
   "Tekken3",
   "Tengai",
   "천공대전",
+  "MapleDS",
 ];
 export default gameNames;
