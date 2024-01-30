@@ -19,5 +19,6 @@ const gameNames = [
   "천공대전",
   "MapleDS",
   "DragonBallZ",
+  "PenguinBrothers2",
 ];
 export default gameNames;
