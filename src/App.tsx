@@ -24,6 +24,7 @@ import BloodyRoar2 from "./pages/Games/BloodyRoar2/BloodyRoar2";
 import MapleDS from "./pages/Games/MapleDS/MapleDS";
 import DragonBallZ from "./pages/Games/DragonBallZ/DragonBallZ";
 import PenguinBrothers2 from "./pages/Games/PenguinBrothers2/PenguinBrothers2";
+import 샤오샤오4 from "./pages/Games/샤오샤오4/샤오샤오4";
 function App() {
   return (
     <Routes>
@@ -51,6 +52,7 @@ function App() {
       <Route path="/Games/MapleDS" Component={MapleDS} />
       <Route path="/Games/DragonBallZ" Component={DragonBallZ} />
       <Route path="/Games/PenguinBrothers2" Component={PenguinBrothers2} />
+      <Route path="/Games/샤오샤오4" Component={샤오샤오4} />
     </Routes>
   );
 }
