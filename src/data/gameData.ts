@@ -21,5 +21,6 @@ const gameNames = [
   "DragonBallZ",
   "PenguinBrothers2",
   "샤오샤오4",
+  "BubbleBubble",
 ];
 export default gameNames;
