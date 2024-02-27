@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import TopBar from "../../common/components/topbar/topBar";
 
@@ -10,7 +10,7 @@ const Background = styled.div`
 
 const Body = styled.div`
   height: 100vh;
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -18,8 +18,13 @@ const Body = styled.div`
   padding: 15px;
 `;
 
-const AboutPage = () => {
-  const [borderColor, setBorderColor] = useState("red");
+const AboutPage: React.FC = () => {
+  const [borderColor, setBorderColor] = useState<string>("red");
+
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isDrawing, setIsDrawing] = useState<boolean>(false);
+  const [lastX, setLastX] = useState<number>(0);
+  const [lastY, setLastY] = useState<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,7 +35,58 @@ const AboutPage = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const getRandomColor = () => {
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const rect = canvas.getBoundingClientRect();
+
+    const handleMouseDown = (event: MouseEvent) => {
+      setIsDrawing(true);
+      setLastX(event.clientX - rect.left);
+      setLastY(event.clientY - rect.top);
+    };
+
+    const handleMouseMove = (event: MouseEvent) => {
+      if (!isDrawing || !ctx) return;
+
+      const currentX = event.clientX - rect.left;
+      const currentY = event.clientY - rect.top;
+
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(currentX, currentY);
+      ctx.stroke();
+
+      setLastX(currentX);
+      setLastY(currentY);
+    };
+
+    const handleMouseUp = () => {
+      setIsDrawing(false);
+    };
+
+    const handleMouseLeave = () => {
+      setIsDrawing(false);
+    };
+
+    canvas.addEventListener("mousedown", handleMouseDown);
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mouseup", handleMouseUp);
+    canvas.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      canvas.removeEventListener("mousedown", handleMouseDown);
+      canvas.removeEventListener("mousemove", handleMouseMove);
+      canvas.removeEventListener("mouseup", handleMouseUp);
+      canvas.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [isDrawing, lastX, lastY]);
+
+  const getRandomColor = (): string => {
     const letters = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
@@ -38,11 +94,25 @@ const AboutPage = () => {
     }
     return color;
   };
+
   return (
     <Background style={{ border: `5px dashed ${borderColor}` }}>
       <TopBar />
-      <Body></Body>
+      <Body>
+        <canvas
+          ref={canvasRef}
+          width="1000"
+          height="1000"
+          style={{ border: "1px solid #000" }}
+        ></canvas>
+        <div>
+          <p>
+            <a href="https://jik-k.github.io/">이세계로 향하는 문</a>
+          </p>
+        </div>
+      </Body>
     </Background>
   );
 };
+
 export default AboutPage;
