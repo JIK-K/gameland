@@ -105,11 +105,6 @@ const AboutPage: React.FC = () => {
           height="1000"
           style={{ border: "1px solid #000" }}
         ></canvas>
-        <div>
-          <p>
-            <a href="https://jik-k.github.io/">이세계로 향하는 문</a>
-          </p>
-        </div>
       </Body>
     </Background>
   );
