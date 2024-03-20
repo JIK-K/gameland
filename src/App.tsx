@@ -26,6 +26,7 @@ import DragonBallZ from "./pages/Games/DragonBallZ/DragonBallZ";
 import PenguinBrothers2 from "./pages/Games/PenguinBrothers2/PenguinBrothers2";
 import 샤오샤오4 from "./pages/Games/샤오샤오4/샤오샤오4";
 import BubbleBubble from "./pages/Games/BubbleBubble/BubbleBubble";
+import SuperBomberman from "./pages/Games/SuperBomberman/SuperBomberman";
 function App() {
   return (
     <Routes>
@@ -55,6 +56,7 @@ function App() {
       <Route path="/Games/PenguinBrothers2" Component={PenguinBrothers2} />
       <Route path="/Games/샤오샤오4" Component={샤오샤오4} />
       <Route path="/Games/BubbleBubble" Component={BubbleBubble} />
+      <Route path="/Games/SuperBomberman" Component={SuperBomberman} />
     </Routes>
   );
 }
