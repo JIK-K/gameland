@@ -25,5 +25,6 @@ const gameNames = [
   "SuperBomberman",
   "DemonFront",
   "MetalSlug4",
+  "Galaga",
 ];
 export default gameNames;
