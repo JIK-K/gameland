@@ -170,7 +170,7 @@ const 벽돌깨기: React.FC = () => {
         if (x > paddleX && x < paddleX + paddleWidth) {
           dy = -dy;
         } else {
-          document.location.reload();
+          // document.location.reload();
           clearInterval(interval);
         }
       }
