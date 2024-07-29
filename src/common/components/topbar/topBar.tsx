@@ -26,7 +26,6 @@ const LinkBox = styled.div`
   height: fit-content;
   padding: 8px;
   background-color: black;
-  background-image: linear-gradient(to bottom, black, yellow);
 `;
 
 const TopBar = () => {
@@ -41,7 +40,7 @@ const TopBar = () => {
         </LinkBox>
 
         <NavLink to="/about" style={{ color: "#E6E6E6", fontWeight: "bold" }}>
-          About
+          GridGame
         </NavLink>
       </MeauBar>
     </Background>
@@ -49,7 +48,3 @@ const TopBar = () => {
 };
 
 export default TopBar;
-// <div>
-//   <NavLink to="/home">Home</NavLink>
-//   <NavLink to="/about">About</NavLink>
-// </div>
