@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gameland/static/css/main.f855e6bc.css",
-    "main.js": "/gameland/static/js/main.df6fbe0a.js",
+    "main.js": "/gameland/static/js/main.0d0120c0.js",
     "static/js/787.1bda101a.chunk.js": "/gameland/static/js/787.1bda101a.chunk.js",
     "static/media/banner.png": "/gameland/static/media/banner.4f69b7a0e53c426bb14d.png",
     "index.html": "/gameland/index.html",
     "main.f855e6bc.css.map": "/gameland/static/css/main.f855e6bc.css.map",
-    "main.df6fbe0a.js.map": "/gameland/static/js/main.df6fbe0a.js.map",
+    "main.0d0120c0.js.map": "/gameland/static/js/main.0d0120c0.js.map",
     "787.1bda101a.chunk.js.map": "/gameland/static/js/787.1bda101a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.df6fbe0a.js"
+    "static/js/main.0d0120c0.js"
   ]
 }
