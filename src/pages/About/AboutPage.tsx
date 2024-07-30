@@ -1,6 +1,15 @@
-import React, { useEffect, useState, useRef } from "react";
-import styled from "styled-components";
+import React, { useEffect, useState } from "react";
+import styled, { createGlobalStyle } from "styled-components";
 import TopBar from "../../common/components/topbar/topBar";
+
+const GlobalStyle = createGlobalStyle`
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+`;
 
 const Background = styled.div`
   width: 100%;
@@ -12,6 +21,8 @@ const Body = styled.div`
   height: 100vh;
   background-color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const AboutPage: React.FC = () => {
@@ -42,12 +53,21 @@ const AboutPage: React.FC = () => {
   };
 
   return (
-    <Background style={{ border: `5px dashed ${borderColor}` }}>
-      <TopBar />
-      <Body>
-        <div dangerouslySetInnerHTML={iframeGridGame()} />
-      </Body>
-    </Background>
+    <>
+      <GlobalStyle />
+      <Background style={{ border: `5px dashed ${borderColor}` }}>
+        <TopBar />
+        <Body>
+          <div
+            dangerouslySetInnerHTML={iframeGridGame()}
+            style={{
+              display: "flex",
+              height: "100%",
+            }}
+          />
+        </Body>
+      </Background>
+    </>
   );
 };
 
