@@ -26,5 +26,6 @@ const gameNames = [
   "DemonFront",
   "MetalSlug4",
   "Galaga",
+  "XevosShowdown",
 ];
 export default gameNames;

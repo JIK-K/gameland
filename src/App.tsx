@@ -30,6 +30,7 @@ import SuperBomberman from "./pages/Games/SuperBomberman/SuperBomberman";
 import DemonFront from "./pages/Games/DemonFront/DemonFront";
 import MetalSlug4 from "./pages/Games/MetalSlug4/MetalSlug4";
 import Galaga from "./pages/Games/Galaga/Galaga";
+import XevosShowdown from "./pages/Games/XevosShowdown/XevosShowdonw";
 function App() {
   return (
     <Routes>
@@ -63,6 +64,7 @@ function App() {
       <Route path="/Games/DemonFront" Component={DemonFront} />
       <Route path="/Games/MetalSlug4" Component={MetalSlug4} />
       <Route path="/Games/Galaga" Component={Galaga} />
+      <Route path="/Games/XevosShowdown" Component={XevosShowdown} />
     </Routes>
   );
 }
