@@ -31,6 +31,7 @@ import DemonFront from "./pages/Games/DemonFront/DemonFront";
 import MetalSlug4 from "./pages/Games/MetalSlug4/MetalSlug4";
 import Galaga from "./pages/Games/Galaga/Galaga";
 import XevosShowdown from "./pages/Games/XevosShowdown/XevosShowdonw";
+import 근육맨머슬태그매치 from "./pages/Games/근육맨머슬태그매치/근육맨머슬태그매치";
 function App() {
   return (
     <Routes>
@@ -65,6 +66,7 @@ function App() {
       <Route path="/Games/MetalSlug4" Component={MetalSlug4} />
       <Route path="/Games/Galaga" Component={Galaga} />
       <Route path="/Games/XevosShowdown" Component={XevosShowdown} />
+      <Route path="/Games/근육맨머슬태그매치" Component={근육맨머슬태그매치} />
     </Routes>
   );
 }

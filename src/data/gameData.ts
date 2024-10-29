@@ -27,5 +27,6 @@ const gameNames = [
   "MetalSlug4",
   "Galaga",
   "XevosShowdown",
+  "근육맨머슬태그매치",
 ];
 export default gameNames;
