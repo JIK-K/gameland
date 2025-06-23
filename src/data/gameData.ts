@@ -28,5 +28,6 @@ const gameNames = [
   "Galaga",
   "XevosShowdown",
   "근육맨머슬태그매치",
+  "Tanks",
 ];
 export default gameNames;

@@ -32,6 +32,7 @@ import MetalSlug4 from "./pages/Games/MetalSlug4/MetalSlug4";
 import Galaga from "./pages/Games/Galaga/Galaga";
 import XevosShowdown from "./pages/Games/XevosShowdown/XevosShowdonw";
 import 근육맨머슬태그매치 from "./pages/Games/근육맨머슬태그매치/근육맨머슬태그매치";
+import Tanks from "./pages/Games/Tanks/Tanks";
 function App() {
   return (
     <Routes>
@@ -67,6 +68,7 @@ function App() {
       <Route path="/Games/Galaga" Component={Galaga} />
       <Route path="/Games/XevosShowdown" Component={XevosShowdown} />
       <Route path="/Games/근육맨머슬태그매치" Component={근육맨머슬태그매치} />
+      <Route path="/Games/Tanks" Component={Tanks} />
     </Routes>
   );
 }
