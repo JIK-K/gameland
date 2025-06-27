@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, BrowserRouter as Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./pages/About/AboutPage";
 import SpinningSword from "./pages/Games/SpinningSword/SpinningSword";
