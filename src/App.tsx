@@ -1,6 +1,5 @@
-import React from "react";
 import "./App.css";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Routes } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./pages/About/AboutPage";
 import SpinningSword from "./pages/Games/SpinningSword/SpinningSword";
@@ -33,6 +32,7 @@ import Galaga from "./pages/Games/Galaga/Galaga";
 import XevosShowdown from "./pages/Games/XevosShowdown/XevosShowdonw";
 import 근육맨머슬태그매치 from "./pages/Games/근육맨머슬태그매치/근육맨머슬태그매치";
 import Tanks from "./pages/Games/Tanks/Tanks";
+
 function App() {
   return (
     <Routes>

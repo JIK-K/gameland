@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import TopBar from "../../../common/components/topbar/topBar";
 
@@ -14,6 +13,7 @@ const PenguinBrothers2 = () => {
       <TopBar />
       <iframe
         src="https://www.retrogames.cc/embed/9447-penguin-brothers-japan.html"
+        title="PenguinBrothers2"
         width="100%"
         height="100%"
         style={{ border: "none" }}
