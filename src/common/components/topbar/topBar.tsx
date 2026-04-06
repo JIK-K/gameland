@@ -38,10 +38,6 @@ const TopBar = () => {
             Home
           </NavLink>
         </LinkBox>
-
-        <NavLink to="/about" style={{ color: "#E6E6E6", fontWeight: "bold" }}>
-          GridGame
-        </NavLink>
       </MeauBar>
     </Background>
   );
